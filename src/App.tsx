@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { useGetSynonyms } from "./hooks/useGetSynonyms";
+import Spinner from "./components/Spinner";
 
 function App() {
   // State to update the user input field
@@ -37,7 +38,9 @@ function App() {
       </form>
 
       {isLoading ? (
-        <div>Loading...</div>
+        <div className="loading">
+          <Spinner />
+        </div>
       ) : (
         <>
           {synonyms.length > 0 && (

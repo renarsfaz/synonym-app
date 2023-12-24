@@ -67,3 +67,15 @@ li {
 li:hover {
   border: 2px solid #0083fb;
 }
+
+.loading {
+  text-align: center;
+  padding: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
